@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import './App.css';
-
+import FilmsList from "./Components/filmsList";
 class App extends Component {
 constructor(props) {
 super(props);
@@ -17,7 +17,7 @@ let newList = [...this.state.list, this.state.text];
 this.setState({list: newList, text: ""});
 }
 
-render(){
+render() {
     return (
       <div>
         <h1>Hello World</h1>
@@ -35,6 +35,7 @@ render(){
           return <li key={item + idx}>{item}</li>
           })}
         </ul>
+      <FilmsList />
       </div>
     );
   }
