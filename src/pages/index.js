@@ -1,5 +1,3 @@
-import FilmsPage from "./films.page";
-import HomePage from "./home.page";
-import SingleFilmPage from "./singlefilm.page";
-
-export { FilmsPage, HomePage, SingleFilmPage }
+export { default as FilmsPage } from "./films.page";
+export { default as HomePage } from "./home.page";
+export { default as SingleFilmPage } from "./single-film.page";
