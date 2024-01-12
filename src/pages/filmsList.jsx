@@ -10,6 +10,7 @@ function FilmsList(props) {
       .catch((error) => console.error(error));
   }
 
+
   useEffect(() => {
     getFilms();
   }, []);

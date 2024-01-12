@@ -1,5 +1,5 @@
 export function filterFilmsByDirector(list, director) {
-    if (director) return list.filter((film) => film.director == director);
+    if (director) return list.filter((film) => film.director === director);
     else return list;
   }
   
