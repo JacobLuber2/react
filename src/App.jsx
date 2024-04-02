@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
-import { FilmsPage, HomePage } from "./pages";
+import { FilmsPage, HomePage, SingleFilmPage } from "./pages";
 function App(props) {
   return (
     <BrowserRouter>
@@ -17,6 +16,7 @@ function App(props) {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="films" element={<FilmsPage />} />
+        <Route path="films/:id" element={<SingleFilmPage />} />
       </Routes>
     </BrowserRouter>
   );
